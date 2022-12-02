@@ -3,11 +3,8 @@ package com.example.and11_allview.test;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-<<<<<<< Updated upstream
-=======
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
->>>>>>> Stashed changes
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,11 +12,6 @@ import android.view.ViewGroup;
 
 import com.example.and11_allview.R;
 
-<<<<<<< Updated upstream
-
-public class TestFragment1 extends Fragment {
-
-=======
 import java.util.ArrayList;
 
 
@@ -28,14 +20,10 @@ public class TestFragment1 extends Fragment {
     RecyclerView test_recv;
     ArrayList<TestDTO1> list= new ArrayList<>();
 
->>>>>>> Stashed changes
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-<<<<<<< Updated upstream
-        return inflater.inflate(R.layout.fragment_test1, container, false);
-=======
 
         View v = inflater.inflate(R.layout.fragment_test, container, false);
 
@@ -57,6 +45,5 @@ public class TestFragment1 extends Fragment {
         test_recv.setLayoutManager(manager);
 
         return v;
->>>>>>> Stashed changes
     }
 }

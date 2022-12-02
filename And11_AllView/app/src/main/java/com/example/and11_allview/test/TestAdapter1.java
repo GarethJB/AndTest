@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.and11_allview.R;
+import com.example.and11_allview.recyclertest.TestAdapter;
+
 public class TestAdapter1 extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     LayoutInflater inflater;
 
@@ -17,8 +20,9 @@ public class TestAdapter1 extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        
-        return null;
+        View v = inflater.inflate(R.layout.item_test1f_list, parent, false);
+        ViewHolder viewHolder = new ViewHolder(v);
+        return viewHolder;
     }
 
     @Override
@@ -27,8 +31,18 @@ public class TestAdapter1 extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     }
 
     @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position;
+    }
+
+    @Override
     public int getItemCount() {
-        return 0;
+        return 5;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

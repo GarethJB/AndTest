@@ -20,14 +20,11 @@ public class TestAdapter1 extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-<<<<<<< Updated upstream
+
         View v = inflater.inflate(R.layout.item_test1f_list, parent, false);
         ViewHolder viewHolder = new ViewHolder(v);
         return viewHolder;
-=======
-        View v = inflater.inflate();
-        return null;
->>>>>>> Stashed changes
+
     }
 
     @Override

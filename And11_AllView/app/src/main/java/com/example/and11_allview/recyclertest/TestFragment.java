@@ -12,10 +12,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.and11_allview.R;
+import com.example.and11_allview.test.TestDTO1;
+
+import java.util.ArrayList;
 
 
 public class TestFragment extends Fragment {
     RecyclerView test_recv;
+    ArrayList<TestDTO1> list = new ArrayList<>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

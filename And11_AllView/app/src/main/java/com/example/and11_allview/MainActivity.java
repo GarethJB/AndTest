@@ -13,9 +13,10 @@ import com.example.and11_allview.gridv.GridFragment;
 import com.example.and11_allview.listfrag.ListFragment;
 import com.example.and11_allview.recycler.RecyclerFragment;
 import com.example.and11_allview.recyclertest.TestFragment;
+import com.example.and11_allview.test.TestFragment1;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button btn_sub, btn_list, btn_grid, btn_recycler, getBtn_recycler2;
+    Button btn_sub, btn_list, btn_grid, btn_recycler, getBtn_recycler2, btn_test1;
 
 
     @Override
@@ -28,12 +29,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_grid = findViewById(R.id.btn_grid);
         btn_recycler = findViewById(R.id.btn_recycler);
         getBtn_recycler2 = findViewById(R.id.btn_recycler2);
+        btn_test1 = findViewById(R.id.btn_test1);
+
 
         btn_sub.setOnClickListener(this);
         btn_list.setOnClickListener(this);
         btn_grid.setOnClickListener(this);
         btn_recycler.setOnClickListener(this);
         getBtn_recycler2.setOnClickListener(this);
+        btn_test1.setOnClickListener(this);
+
     }
 
     @Override
@@ -57,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (v.getId() == R.id.btn_recycler2) {
             getSupportFragmentManager().beginTransaction().replace(R.id.container, new TestFragment()).commit();
 
+        } else if (v.getId() == R.id.btn_test1) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, new TestFragment1()).commit();
         }
     }
 }

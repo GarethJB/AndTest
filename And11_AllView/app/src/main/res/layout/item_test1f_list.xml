@@ -23,7 +23,7 @@
             android:id="@+id/tv_test1f_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="상품제목"
+            android:text="상품제목상품제목상품제목상품제목상품제목상품제목상품"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="16sp"
@@ -48,36 +48,61 @@
             android:layout_marginTop="5dp"
             android:layout_below="@id/tv_test1f_info"/>
         
-        <LinearLayout
-            android:layout_width=""
-            android:layout_height=""
-        
-        <ImageView
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_message_24"/>
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/iv_test1f_cmt"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_baseline_message_24"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tv_test1f_cmt"/>
+
+            <TextView
+                android:id="@+id/tv_test1f_cmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/iv_test1f_like"/>
+
+            <ImageView
+                android:id="@+id/iv_test1f_like"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:src="@drawable/like"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tv_test1f_like" />
+
+            <TextView
+                android:id="@+id/tv_test1f_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
         
-        <ImageView
-            android:layout_width="12dp"
-            android:layout_height="12dp"
-            android:src="@drawable/like"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="25dp"
-            android:layout_alignParentEnd="true"
-            android:layout_toLeftOf="@+id/tv_test1f_like"
-            android:layout_alignParentBottom="true"/>
+
+        
+
         
         
-        <TextView
-            android:id="@+id/tv_test1f_like"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1"
-            android:textColor="@color/black"
-            android:layout_marginBottom="5dp"
-            android:layout_marginRight="15dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"/>
+
 
 
 

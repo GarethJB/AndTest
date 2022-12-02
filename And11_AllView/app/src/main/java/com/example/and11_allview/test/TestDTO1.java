@@ -1,6 +1,8 @@
 package com.example.and11_allview.test;
 
-public class TestDTO1 {
+import java.io.Serializable;
+
+public class TestDTO1 implements Serializable {
     String tv_test1f_title, tv_test1f_info, tv_test1f_price, tv_test1f_like, tv_test1f_cmt;
     int iv_test1f;
 

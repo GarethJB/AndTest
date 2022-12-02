@@ -1,6 +1,8 @@
 package com.example.and11_allview.test;
 
+import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,10 +23,12 @@ import java.util.ArrayList;
 public class TestAdapter1 extends RecyclerView.Adapter<TestAdapter1.ViewHolder> {
     LayoutInflater inflater;
     ArrayList<TestDTO1> list;
+    Context context;
 
-    public TestAdapter1(LayoutInflater inflater, ArrayList<TestDTO1> list) {
+    public TestAdapter1(LayoutInflater inflater, ArrayList<TestDTO1> list, Context context) {
         this.inflater = inflater;
         this.list = list;
+        this.context = context;
     }
 
     @NonNull
@@ -50,7 +54,9 @@ public class TestAdapter1 extends RecyclerView.Adapter<TestAdapter1.ViewHolder> 
         v.iv_test1f.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-           
+                Log.d("로그", "onClick: 클릭됨");
+                Intent intent = new Intent(context, DetailActivity.class);
+                context.startActivity(intent);
             }
         });
 

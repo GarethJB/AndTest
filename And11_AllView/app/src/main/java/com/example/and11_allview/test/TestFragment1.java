@@ -35,7 +35,7 @@ public class TestFragment1 extends Fragment {
         list.add(new TestDTO1("상품4", "상품정보4", "6000원", "400", "6", R.drawable.test_img_4));
         list.add(new TestDTO1("상품5", "상품정보5", "7000원", "500", "7", R.drawable.test_img_5));
 
-        TestAdapter1 adapter = new TestAdapter1(inflater, list);
+        TestAdapter1 adapter = new TestAdapter1(inflater, list, getContext());
 
         recv_test = v.findViewById(R.id.recv_test);
         recv_test.setAdapter(adapter);

@@ -29,11 +29,11 @@ public class TestFragment1 extends Fragment {
 
         list = new ArrayList<>();
 
-        list.add(new TestDTO1("상품1", "상품정보1", "3000원", "100", R.drawable.test_img_1));
-        list.add(new TestDTO1("상품2", "상품정보2", "4000원", "200", R.drawable.test_img_2));
-        list.add(new TestDTO1("상품3", "상품정보3", "5000원", "300", R.drawable.test_img_3));
-        list.add(new TestDTO1("상품4", "상품정보4", "6000원", "400", R.drawable.test_img_4));
-        list.add(new TestDTO1("상품5", "상품정보5", "7000원", "500", R.drawable.test_img_5));
+        list.add(new TestDTO1("상품1", "상품정보1", "3000원", "100", "3", R.drawable.test_img_1));
+        list.add(new TestDTO1("상품2", "상품정보2", "4000원", "200", "4", R.drawable.test_img_2));
+        list.add(new TestDTO1("상품3", "상품정보3", "5000원", "300", "5", R.drawable.test_img_3));
+        list.add(new TestDTO1("상품4", "상품정보4", "6000원", "400", "6", R.drawable.test_img_4));
+        list.add(new TestDTO1("상품5", "상품정보5", "7000원", "500", "7", R.drawable.test_img_5));
 
         TestAdapter1 adapter = new TestAdapter1(inflater, list);
 

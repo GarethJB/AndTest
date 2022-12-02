@@ -42,6 +42,7 @@ public class TestAdapter1 extends RecyclerView.Adapter<TestAdapter1.ViewHolder> 
         v.tv_test1f_info.setText(dto.getTv_test1f_info());
         v.tv_test1f_price.setText(dto.getTv_test1f_price());
         v.tv_test1f_like.setText(dto.getTv_test1f_like());
+        v.tv_test1f_cmt.setText(dto.getTv_test1f_cmt());
         v.iv_test1f.setImageResource(dto.iv_test1f);
     }
 
@@ -62,7 +63,7 @@ public class TestAdapter1 extends RecyclerView.Adapter<TestAdapter1.ViewHolder> 
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView iv_test1f;
-        TextView tv_test1f_title, tv_test1f_info, tv_test1f_price, tv_test1f_like;
+        TextView tv_test1f_title, tv_test1f_info, tv_test1f_price, tv_test1f_like, tv_test1f_cmt;
         public ViewHolder(@NonNull View v) {
             super(v);
             iv_test1f = v.findViewById(R.id.iv_test1f);
@@ -70,6 +71,8 @@ public class TestAdapter1 extends RecyclerView.Adapter<TestAdapter1.ViewHolder> 
             tv_test1f_info = v.findViewById(R.id.tv_test1f_info);
             tv_test1f_price = v.findViewById(R.id.tv_test1f_price);
             tv_test1f_like = v.findViewById(R.id.tv_test1f_like);
+            tv_test1f_cmt = v.findViewById(R.id.tv_test1f_cmt);
+
 
         }
     }

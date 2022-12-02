@@ -1,15 +1,24 @@
 package com.example.and11_allview.test;
 
 public class TestDTO1 {
-    String tv_test1f_title, tv_test1f_info, tv_test1f_price, tv_test1f_like;
+    String tv_test1f_title, tv_test1f_info, tv_test1f_price, tv_test1f_like, tv_test1f_cmt;
     int iv_test1f;
 
-    public TestDTO1(String tv_test1f_title, String tv_test1f_info, String tv_test1f_price, String tv_test1f_like, int iv_test1f) {
+    public TestDTO1(String tv_test1f_title, String tv_test1f_info, String tv_test1f_price, String tv_test1f_like, String tv_test1f_cmt, int iv_test1f) {
         this.tv_test1f_title = tv_test1f_title;
         this.tv_test1f_info = tv_test1f_info;
         this.tv_test1f_price = tv_test1f_price;
         this.tv_test1f_like = tv_test1f_like;
+        this.tv_test1f_cmt = tv_test1f_cmt;
         this.iv_test1f = iv_test1f;
+    }
+
+    public String getTv_test1f_cmt() {
+        return tv_test1f_cmt;
+    }
+
+    public void setTv_test1f_cmt(String tv_test1f_cmt) {
+        this.tv_test1f_cmt = tv_test1f_cmt;
     }
 
     public String getTv_test1f_title() {

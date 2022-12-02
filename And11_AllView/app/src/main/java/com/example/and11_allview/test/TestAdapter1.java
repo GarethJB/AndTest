@@ -1,5 +1,6 @@
 package com.example.and11_allview.test;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.and11_allview.MainActivity;
 import com.example.and11_allview.R;
 import com.example.and11_allview.recyclertest.TestAdapter;
 
@@ -44,6 +46,16 @@ public class TestAdapter1 extends RecyclerView.Adapter<TestAdapter1.ViewHolder> 
         v.tv_test1f_like.setText(dto.getTv_test1f_like());
         v.tv_test1f_cmt.setText(dto.getTv_test1f_cmt());
         v.iv_test1f.setImageResource(dto.iv_test1f);
+
+        v.iv_test1f.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+           
+            }
+        });
+
+
+
     }
 
     @Override
